@@ -146,7 +146,7 @@ group :development do
 end
 
 group :production do
-  gem 'lograge', '~> 0.12'
+  gem 'lograge', '~> 0.13', '>= 0.13.0'
 end
 
 gem 'concurrent-ruby', require: false
