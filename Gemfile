@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 ruby '>= 2.6.0', '< 3.1.0'
 
 gem 'pkg-config', '~> 1.4'
-gem 'rexml', '~> 3.2'
+gem 'rexml', '~> 3.2', '>= 3.2.7'
 
 gem 'puma', '~> 5.6'
 gem 'rails', '~> 6.1.6'
@@ -39,7 +39,7 @@ end
 
 gem 'net-ldap', '~> 0.17'
 gem 'omniauth-cas', '~> 2.0'
-gem 'omniauth-saml', '~> 1.10'
+gem 'omniauth-saml', '~> 2.0', '>= 2.0.0'
 gem 'gitlab-omniauth-openid-connect', '~>0.10.0', require: 'omniauth_openid_connect'
 gem 'omniauth', '~> 1.9'
 gem 'omniauth-rails_csrf_protection', '~> 0.1'
@@ -119,7 +119,7 @@ group :test do
   gem 'rails-controller-testing', '~> 1.0'
   gem 'rspec-sidekiq', '~> 3.1'
   gem 'simplecov', '~> 0.21', require: false
-  gem 'webmock', '~> 3.17'
+  gem 'webmock', '~> 3.17', '>= 3.17.1'
   gem 'rspec_junit_formatter', '~> 0.5'
 end
 
@@ -130,10 +130,10 @@ group :development do
   gem 'binding_of_caller', '~> 1.0'
   gem 'bullet', '~> 7.0'
   gem 'letter_opener', '~> 1.8'
-  gem 'letter_opener_web', '~> 2.0'
+  gem 'letter_opener_web', '~> 3.0', '>= 3.0.0'
   gem 'memory_profiler'
-  gem 'rubocop', '~> 1.30', require: false
-  gem 'rubocop-rails', '~> 2.15', require: false
+  gem 'rubocop', '~> 1.31', '>= 1.31.0', require: false
+  gem 'rubocop-rails', '~> 2.15', '>= 2.15.1', require: false
   gem 'brakeman', '~> 5.2', require: false
   gem 'bundler-audit', '~> 0.9', require: false
 
