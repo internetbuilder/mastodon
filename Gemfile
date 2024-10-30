@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 ruby '>= 2.6.0', '< 3.1.0'
 
 gem 'pkg-config', '~> 1.4'
-gem 'rexml', '~> 3.2'
+gem 'rexml', '~> 3.3', '>= 3.3.9'
 
 gem 'puma', '~> 5.6'
 gem 'rails', '~> 6.1.6'
@@ -132,7 +132,7 @@ group :development do
   gem 'letter_opener', '~> 1.8'
   gem 'letter_opener_web', '~> 2.0'
   gem 'memory_profiler'
-  gem 'rubocop', '~> 1.30', require: false
+  gem 'rubocop', '~> 1.66', '>= 1.66.0', require: false
   gem 'rubocop-rails', '~> 2.15', require: false
   gem 'brakeman', '~> 5.2', require: false
   gem 'bundler-audit', '~> 0.9', require: false
